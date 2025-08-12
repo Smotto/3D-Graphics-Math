@@ -1,0 +1,60 @@
+########################################
+# Build artifacts
+########################################
+# CMake build directories
+build/
+cmake-build-*/
+
+# Binary output
+bin/
+lib/
+
+# Object and compiled files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.pdb
+*.exe
+
+# Generated files
+*.mod
+*.pch
+
+########################################
+# IDE / Editor files
+########################################
+
+# CLion / IntelliJ IDEA
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+########################################
+# OS-specific files
+########################################
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+########################################
+# Logs / Temp files
+########################################
+*.log
+*.tmp
+*.swp
+*.bak
