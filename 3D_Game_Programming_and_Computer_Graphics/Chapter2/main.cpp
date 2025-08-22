@@ -1,4 +1,5 @@
 #include "MathFunctionLibrary.h"
+#include "Subnormals.h"
 #include <cmath>
 #include <iostream>
 
@@ -24,11 +25,12 @@ int main() {
 	std::cout << "Second Vector: " << e2 << " Verify its DotProduct is 0 for orthogonality: " << MathFunctionLibrary::DotProduct(e2, e1) << std::endl;
 	std::cout << "Third Vector: " << e3 << " Verify its DotProduct is 0 for orthogonality: " << MathFunctionLibrary::DotProduct(e3, e2) << std::endl;
 
-	Vector3 p1 {1,2,3};
-	Vector3 p2 {-2,2,4};
-	Vector3 p3 {7,-8,6};
+	Vector3 p1 { 1, 2, 3 };
+	Vector3 p2 { -2, 2, 4 };
+	Vector3 p3 { 7, -8, 6 };
 
 	std::cout << "Area of a triangle: " << MathFunctionLibrary::AreaOfTriangle(p1, p2, p3) << std::endl;
+	std::cout << sizeof(Matrix4) << std::endl;
 
 	return 0;
 }
